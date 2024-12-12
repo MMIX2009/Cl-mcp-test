@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Cl-mcp-test</title>
     <style>
+        :root {
+            --primary-blue: #1e3d59;
+            --secondary-blue: #3873b3;
+            --light-blue: #f2f6fa;
+            --accent-blue: #2b5384;
+            --text-light: #ffffff;
+            --text-dark: #1e3d59;
+        }
         body {
             font-family: Arial, sans-serif;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f0f0f0;
+            background-color: var(--light-blue);
         }
         h1, h2 {
-            color: #333;
+            color: var(--primary-blue);
             text-align: center;
-            border-bottom: 2px solid #333;
+            border-bottom: 2px solid var(--secondary-blue);
             padding-bottom: 10px;
         }
         p {
-            color: #666;
+            color: var(--text-dark);
             line-height: 1.6;
         }
         ul {
@@ -28,21 +36,30 @@
         }
         li {
             margin: 10px 0;
-            color: #444;
+            color: var(--text-dark);
         }
         .section {
             background-color: white;
             padding: 20px;
             margin: 20px 0;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(30, 61, 89, 0.1);
+            border-left: 4px solid var(--secondary-blue);
+        }
+        .section:hover {
+            box-shadow: 0 4px 8px rgba(30, 61, 89, 0.2);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
         }
         footer {
             margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ccc;
+            padding: 20px;
+            border-top: 1px solid var(--secondary-blue);
             text-align: center;
-            color: #888;
+            color: var(--primary-blue);
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 -2px 5px rgba(30, 61, 89, 0.1);
         }
     </style>
 </head>
